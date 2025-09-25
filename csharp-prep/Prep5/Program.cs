@@ -50,7 +50,7 @@ class Program
         {
             Console.WriteLine($"{typed_name}, the square of your number is {squared_favorite_number}");
             int how_old = 2025 - birth_year;
-            Console.WriteLine($"{typed_name}, you will turn {how_old} this year.");
+            Console.WriteLine($"{typed_name}, you will turn {how_old} this year. ");
         }
     }
 }
