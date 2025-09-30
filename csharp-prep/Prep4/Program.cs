@@ -16,7 +16,7 @@ class Program
         int average = 0;
         int large = 0;
 
-        while (listing == true)
+        while (listing)
         {
             Console.Write("Enter Number: ");
             string number_entered = Console.ReadLine();

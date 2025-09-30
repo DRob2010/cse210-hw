@@ -13,7 +13,7 @@ class Program
         int number_of_guesses = 0;
         bool guessing = true;
 
-        while (guessing == true)
+        while (guessing)
         {
 
             number_of_guesses += 1;
