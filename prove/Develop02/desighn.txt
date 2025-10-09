@@ -1,0 +1,45 @@
+Classes:
+_________
+|Journal
+|_________
+|Attributes:
+|Entries: List<Journal_Entry>
+|_________
+|Behaviors:
+|Display_Entry(int): Void
+|load_entry(string): Void
+|New_Entry(): Void
+|Exit(): Void
+|_________
+
+_________
+|Journal_Entry
+|_________
+|Attributes:
+|Prompts: List<Prompts>
+|Written_Entry: string
+|_________
+|Behaviors:
+|Select_Prompt(): string
+|Edit_Entry(): string
+|Save_entry(string): Void
+|Back_to_Journal(): Void
+|_________
+
+ 
+Journal -> Display_Entry(Entry number) or load_entry()        or           New_Entry   or Exit()
+^                        <J                   L> Edit_Entry     <- Select_Prompt <J
+^                 Back_to_Journal      <-   Save_entry <J
+
+Nouns:    -Classes-
+Journal_Entry
+Menu
+Prompt_Generator
+*Journal
+
+Verbs:     -Behaviors-
+*Display_Entries
+*Save
+*Load
+Exit
+Write_Entry
