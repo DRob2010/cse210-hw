@@ -1,0 +1,18 @@
+___________________
+|Fractions
+___________________
+|_top: int
+|_bottom: int
+___________________
+|Fractions()
+|Fractions(WholeNumber:int)
+|Fractions(top:int, bottom:int)
+|
+|GetTop()
+|SetTop(top:int)
+|GetBottom()
+|SetBottom(bottom:int)
+|
+|GetFractionString():string
+|GetDecimalValue():double
+___________________
