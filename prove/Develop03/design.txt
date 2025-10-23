@@ -1,0 +1,46 @@
+Classes:
+_________
+|Scripture
+|_________
+|Attributes:
+|-List _scripture
+|_________
+|Behaviors:
+|+Scripture()
+|+Scripture(string reference)
+|+ Void RemoveWord(List _scripture, string word)
+|+ Void GetScripture(List _scripture)
+|_________
+
+_________
+|Word
+|_________
+|Attributes:
+|-String _word
+|_________
+|Behaviors:
+|+Word()
+|+Word(string word)
+|+Void SetWord(list scripture, string word)
+|+String GetWord()
+|_________
+
+_________
+|Reference
+|_________
+|Attributes:
+|-String _reference
+|_________
+|Behaviors:
+|+Reference()
+|+Reference(string reference)
+|+Void GetReference()
+|_________
+
+Process:
+GetReference() & GetScripture() Print
+After Enter is pushed
+SetWord() sets to a random word in the Scripture
+GetWord() pulls out the word
+RemoveWord() takes the word and replaces it with lines
+Code Repeats until the whole scripture is lines
