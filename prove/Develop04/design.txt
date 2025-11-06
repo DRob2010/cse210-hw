@@ -1,0 +1,73 @@
+Parent < < <
+______
+Activities
+______
+_time
+_start Message
+_end Message
+______
+Activities()
+Activities(_Time)
+______
+string GetTime(_Time)
+Void Counting()
+Void Animation()
+
+Child >
+______
+Breathing
+______
+_numberOfBreathIns
+______
+Breathing()
+Breathing(_numberOfBreathIns)
+______
+Void BreathIn()
+Void BreathOut()
+
+Child >
+______
+Reflection
+______
+List<String> _prompts
+string _currentPrompt
+______
+Reflection()
+Reflection(prompt)
+______
+Void DisplayPrompt(_currentPrompt)
+
+Child >
+______
+Listing
+______
+List<String> _prompts
+string _currentPrompt
+______
+Listing()
+Listing(prompt)
+______
+Void DisplayPrompt(_currentPrompt)
+
+
+
+All the children classes are connected to the Parent class.
+When Breathing is selected, 
+>Start Message is shown
+the parent will ask for how many seconds
+Breathing will use that to calculate how many BreathIns it needs
+The Breathing activity executes the Breathing activity
+End Message is shown
+>When Reflection is selected, 
+Start Message is shown
+the parent will ask for how many seconds
+A prompt is randomly selected
+The prompt is displayed and gives you time to reflect based off the time
+End Message is shown
+>When Listing is selected, 
+Start Message is shown
+the parent will ask for how many seconds
+A prompt is randomly selected
+The prompt is displayed and gives you time to list your thoughts based off the time
+End Message is shown
+>Use quit to end the program
