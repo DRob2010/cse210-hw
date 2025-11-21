@@ -55,7 +55,7 @@ class Program
             }
             else
             {
-                Console.WriteLine("Invalid respose, please try again.");
+                Console.WriteLine("1.");
                 Console.WriteLine();
             }
         }

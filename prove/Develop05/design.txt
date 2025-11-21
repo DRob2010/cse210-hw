@@ -1,0 +1,59 @@
+Parent < < <
+______
+Goals
+______
+string _LoadedFile
+int _currentPoints
+int _awardPoints
+______
+Goals(_LoadedFile, _points)
+______
+string virtual CreateGoal()
+void SaveGoals(_LoadedFile)
+void LoadGoals(_LoadedFile)
+void RecordGoal()
+void virtual DisplayGoals()
+
+Child >
+______
+SimpleGoal
+______
+_goalCompleted
+_currentSimpleGoal
+______
+SimpleGoal(_LoadedFile, _points)
+______
+string override CreateGoal(_goalCompleted)
+void override DisplayGoals()
+
+Child >
+______
+EternalGoal
+______
+_pointMultiplier
+_currentEternalGoal
+______
+EternalGoal(_LoadedFile, _points, _pointMultiplier)
+______
+string override CreateGoal()
+void override DisplayGoals()
+
+Child >
+______
+ChecklistGoal
+______
+_completePoints
+_currentChecklistGoal
+______
+ChecklistGoal(_LoadedFile, _points, _completePoints)
+______
+string override CreateGoal()
+void override DisplayGoals()
+
+stating the program gives you a menu with a few options
+Create New Goals will ask you what goal you want to replace and allow you make a goal there
+List Goals will show all your current goals
+Load Goals allows you to take a file with your goals and load them
+Save Goals will take your current Goals and points and save them to your current file
+Record Goal will let you complete a goal and gain points
+Quit will exit the program

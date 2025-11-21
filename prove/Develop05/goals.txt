@@ -1,0 +1,15 @@
+Goals:
+Simple Goal:
+Goal not set
+Eternal Goal:
+y
+-Point multiplier
+4
+Checklist Goal:
+z
+-Completed steps:
+8
+-Number of steps:
+8
+Points:
+184
